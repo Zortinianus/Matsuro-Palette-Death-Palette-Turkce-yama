@@ -1,0 +1,54 @@
+﻿Matsuro Palette - Turkce Yama v1.2
+==================================
+
+STEAM + GOG uyumlu. 519 ceviri + 8 sahne basligi.
+
+HIZLI KURULUM (Windows)
+-----------------------
+1. Python kur: https://www.python.org/downloads/ (kurarken
+   "Add python.exe to PATH" kutusunu ISARETLE)
+2. Baslat > cmd > Enter. Su komutu yazip Enter'a bas:
+   py -m pip install UnityPy
+3. Bu klasordeki MatsuroTR_Yama.pyw dosyasina CIFT TIKLA.
+4. Gozat ile oyun klasorunu sec
+   (icinde matsuro.exe olmali, orn: C:\Steam\steamapps\common\matsuro)
+5. Yamayi Kur bas, "Dogrulama OK" yazana kadar bekle.
+6. Oyunu ac, dil Turkce sec.
+
+Duzgun harfler icin (s g i I c o u): uygulamada Ek Yamayi Kur bas,
+fonts klasorundeki MPlus1p-Regular.ttf dosyasina SAG TIKLA > "Tum kullanicilar icin yukle" de (yonetici onayi ister). Sadece "Yukle" dersen oyun fontu gormeyebilir!
+Oyunda ALT+F ile karsilastirabilirsin.
+
+HIZLI KURULUM (Linux)
+---------------------
+1. pip install --break-system-packages UnityPy
+2. python3 MatsuroTR_Yama.pyw  (acilmazsa: sudo apt install python3-tk)
+3. Otomatik Bul / Gozat / Derin Arama ile klasoru sec, Yamayi Kur bas.
+4. Oyunda dil Turkce sec.
+
+NOTLAR
+------
+- Oyun dosyalarin otomatik yedeklenir (*.YEDEK).
+- Diger diller aynen durur, sadece English yuvasi Turkce olur.
+- Korsan/Lutris/Heroic/Wine: oyun klasoru + prefix Gozat ile elle secilir.
+- Geri alma: resources.assets.YEDEK dosyasini resources.assets yap.
+
+ICINDEKILER
+-----------
+- MatsuroTR_Yama.pyw : grafik kurucu (klasor secmeli, ek yamali)
+- apply_patch.py     : komut satiri motoru
+- matsuro_tr_full.json / _ascii.json : 519 ceviri (duzgun / sade harfli)
+- fonts/             : Turkcesi tam yazi tipi
+- requirements.txt   : UnityPy
+
+EN SUMMARY
+----------
+Turkish patch for Matsuro Palette (Steam + GOG): 519 texts + 8 scene headers.
+Run MatsuroTR_Yama.pyw (needs Python + UnityPy), pick the game folder, install.
+Base patch uses ASCII-safe Turkish; the in-app add-on installs BepInEx +
+a font override for proper Turkish glyphs.
+
+---
+NOT: Bu yama yapay zeka destegiyle hazirlandi. Yazim/ceviri hatalari
+oyuncu (Zorti) tarafindan bildirilip yine yapay zeka tarafindan duzeltildi.
+Hala yazi/ceviri hatasi olabilir; gorurseniz lutfen bildirin.
